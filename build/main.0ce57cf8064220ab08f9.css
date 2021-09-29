@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css2?family=Sarabun:wght@400&display=swap);
+/* font-family: 'Sarabun', sans-serif; */
+:root{
+    --color: #be3894;
+    --bc: #FF3CAC;
+    --bi: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Sarabun', sans-serif;
+}
+body{
+    background-color: #e6e9eb;
+}
+button{
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 270px;
+    height: 450px;
+    margin: 100px auto;
+    display: flex; 
+    border-radius: 5px;
+    flex-direction: column;
+    background-color:var(--bc);
+    background-image: var(--bi);
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+/* ---------------------output----------------- */
+.output{
+    flex: 1.2;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.output > div{
+    margin: 5px;
+    text-align: right;
+}
+.output > div.result{
+    flex: 2;
+    padding: 15px 3px 0 0 ;
+    color: white;
+    font-size: 40px;
+}
+.output > div.history{
+    flex: 1;
+    color: #fffdfdc4;
+    font-size: 15px;
+}
+
+/* --------------------input-----------------------  */
+.input{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 5px 5px;
+    
+}
+.input > div.col{
+    flex: 1;
+    display: flex;
+
+}
+
+.input > div.col > button{
+    flex:1;
+}
+
+.input > div.col:first-child > button:first-child{
+    font-weight: 800;
+    color: var(--color);
+}
+
+.input > div.col:first-child > button,
+.input > div.col > button:last-child{
+    background-color: rgb(224, 223, 223);
+}
+
+.input > div.col:last-child > button:last-child{
+    background-color:var(--bc);
+    background-image: var(--bi);    
+}
+.input > div.col:last-child > button:last-child > i.fas{
+    color: white;
+}
+
+.input > div.col:last-child{
+    display: flex;
+}
+
+.input > div.col:last-child > button:first-child{
+    flex: 2;
+}
+.fas{
+    color: #1d1c1c;
+    font-weight: 400;
+}
+
+
+/* ----------------------------efect-------------------- */
+button:hover{
+    background-color: #e1e2e2;    
+}
+
+.input > div.col:first-child > button:hover,
+.input > div.col > button:last-child:hover{
+    background-color: #ffffff;
+}
